@@ -5,7 +5,7 @@
 3. Smart contract Support transfer of money between two users.
 4. Users can also withdraw money from their wallet to Bank Balance.
 
-# This Project Consists of following this.
+# Project Contents.
 
  - Smart Contract
  - API
@@ -95,6 +95,7 @@ function : getUserDetail
 
 # Bank Details of Users
 function : getBankDetailOfUser
+
 bank 1 : `"0xA35d427d81335053a90C4f494EE7C34E0DcC98c8","0xb07A934763216E96922Ffa85268293EDcc2Bf0f5"`
 
 bank 2 : `"0x26F75bE9c6CFd9D629EB041235d61C359457115d","0x7Ad22966C9d649183bd1D42e172C2a26Ec4C3122"`
