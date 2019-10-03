@@ -13,10 +13,10 @@
 
 # Tech Stack
 # 1. Ethereum 
-#   - Development Framework : TruffleFramework
-#   - Smart Contract Language : Solidity
+   - Development Framework : TruffleFramework
+   - Smart Contract Language : Solidity
 # 2. NodeJS
-#   - Web3JS, ExpressJS, HTML/CSS, REST API
+   - Web3JS, ExpressJS, HTML/CSS, REST API
 
 
 # Prerequisites
