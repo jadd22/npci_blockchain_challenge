@@ -55,8 +55,8 @@
 # Add Bank into Blockchain
 
 function : addBank
-"0xb07A934763216E96922Ffa85268293EDcc2Bf0f5","Bank Of India"
-"0x7Ad22966C9d649183bd1D42e172C2a26Ec4C3122","Kotak"
+bank 1: "0xb07A934763216E96922Ffa85268293EDcc2Bf0f5","Bank Of India"
+bank 2: "0x7Ad22966C9d649183bd1D42e172C2a26Ec4C3122","Kotak"
 
 
 # Add User in Bank into Blockchain
@@ -80,8 +80,8 @@ function : transferMoney
 
 # Bank Detail
 function : getBankDetail
-"0xb07A934763216E96922Ffa85268293EDcc2Bf0f5"
-"0x7Ad22966C9d649183bd1D42e172C2a26Ec4C3122"
+bank 1 : "0xb07A934763216E96922Ffa85268293EDcc2Bf0f5"
+bank 2 : "0x7Ad22966C9d649183bd1D42e172C2a26Ec4C3122"
 
 # UserDetails
 function : getUserDetail
@@ -93,9 +93,6 @@ function : getUserDetail
 function : getBankDetailOfUser
 "0xA35d427d81335053a90C4f494EE7C34E0DcC98c8","0xb07A934763216E96922Ffa85268293EDcc2Bf0f5"
 "0x26F75bE9c6CFd9D629EB041235d61C359457115d","0x7Ad22966C9d649183bd1D42e172C2a26Ec4C3122"
-
-
-    ==============================================================================================
 
 # Deploying Smart contract using Truffle
 
