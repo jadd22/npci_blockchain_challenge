@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/addBank", method="POST">
+  Bank Wallet Address <br>
+  <input type="text" name="bankAddress" value="">
+  <br>
+  Name of your Bank :<br>
+  <input type="text" name="name" value="">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html> -->
+
+<% include layouts/head.ejs %>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/stylesheets/general.css">
+</head>
+
+<body>
+    <div>
+        <% include layouts/sidebar.ejs %>
+        <div class="login-page">
+            <div class="form">
+                <p>Register Bank</p>
+                <form class="login-form" action="/addBank", method="POST">
+                    <input type="text" id="bankAddress" name="bankAddress" placeholder="Bank Address" />
+                    <input type="text" id="name" name="name" placeholder="Name" />
+                    <button type="submit" id="btnregisteruser">Register</button>
+                    <!-- <p class="message">Already Registered? <a href="#">
+                            <a href="/">Log In</a>
+                        </a></p> -->
+                </form>
+            </div>
+            <div class="form" >
+                <p>Register User</p>
+                  <form class="login-form" action="/addUsers", method="POST">
+                      <input type="text" id="bankAddress" name="userAddress" placeholder="User Address" />
+                      <input type="text" id="bankAddress" name="bankAddress" placeholder="Bank Address" />
+                      <input type="number" id="bankBal" name="bankBal" placeholder="Bank Balance" />
+                      <input type="text" id="name" name="name" placeholder="Name" />
+                      <button type="submit" id="btnregisteruser">Register</button>
+                      <!-- <p class="message">Already Registered? <a href="#">
+                              <a href="/">Log In</a>
+                          </a></p> -->
+                  </form>
+              </div>
+
+                      </div>
+                  </div>
+              </div>
+        </div>
+
+</body>
+
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

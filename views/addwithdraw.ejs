@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+
+<% include layouts/head.ejs %>
+
+    <body>
+        <% include layouts/sidebar.ejs %>
+            <div class="wrapper">
+                <div class="main-panel">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar bar1"></span>
+                                    <span class="icon-bar bar2"></span>
+                                    <span class="icon-bar bar3"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">Add Or Withdraw</a>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="content">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="card">
+                                        <div class="header">
+                                            <h4 class="title">Add Money Into Wallet</h4>
+                                        </div>
+                                        <div class="content">
+                                            <form method="POST" action="/addMoneyIntoWallet">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label>Bank Account Address</label>
+                                                            <input type="text" class="form-control border-input" id="bankAddress" name="bankAddress" placeholder="Account Number">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label>Your Account Address</label>
+                                                            <input type="text" class="form-control border-input" id="accountNumber" name="userAddress" placeholder="Account Number">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label>Amount</label>
+                                                            <input type="number" class="form-control border-input" id="amount" name="amount" placeholder="Enter Amount">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-center">
+                                                    <button type="submit" class="btn btn-info btn-fill btn-wd">Add Money</button>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                    <!-- <div class="card">
+                                        <div class="header">
+                                            <h4 class="title">Bank Details</h4>
+                                        </div>
+                                        <div class="content">
+                                            <form method="POST" action="/bankDetail/:bankAddress">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label>User Address</label>
+                                                            <input type="text" id="from" name="bankAddress" class="form-control border-input" placeholder="9874561230">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-center">
+                                                    <button type="submit" class="btn btn-info btn-fill btn-wd">Get Details</button>
+                                                </div>
+                                            </form>
+    
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="card">
+                                        <div class="header">
+                                            <h4 class="title">Withdraw Money From Wallet</h4>
+                                        </div>
+                                        <div class="content">
+                                            <form method="POST" action="/addMoneyIntoBank">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label>Bank Account Address</label>
+                                                            <input type="text" class="form-control border-input" id="accountNumber" name="bankAddress" placeholder="Account Number">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label>Your Account Address</label>
+                                                            <input type="text" class="form-control border-input" id="accountNumber" name="userAddress" placeholder="Account Number">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label>Amount</label>
+                                                            <input type="number" class="form-control border-input" id="amount" name="amount" placeholder="Enter Amount">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-center">
+                                                    <button type="submit" class="btn btn-info btn-fill btn-wd">Withdraw Money</button>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="card">
+                                        <div class="header">
+                                            <h4 class="title">User Details</h4>
+                                        </div>
+                                        <div class="content">
+                                            <form method="get" action="/bankDetail">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label>User Address</label>
+                                                             <input type="text" id="from" name="userAddress" class="form-control border-input" placeholder="9874561230"> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-center">
+                                                    <button type="submit" class="btn btn-info btn-fill btn-wd">Get Details</button>
+                                                </div>
+                                            </form>
+    
+                                        </div>
+                                    </div> 
+                                -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+<script>
+    window.addEventListener('load', function() {
+
+        // Checking if Web3 has been injected by the browser (Mist/MetaMask)
+        if (typeof web3 !== 'undefined') {
+        // Use Mist/MetaMask's provider
+        window.web3 = new Web3(web3.currentProvider);
+          } else {
+        console.log('No web3? You should consider trying MetaMask!')
+        // fallback - use your fallback strategy (local node / hosted node +
+        window.web3 = new Web3(new 
+        Web3.providers.HttpProvider("http://localhost:8545"));
+          }
+        
+         // Now you can start your app & access web3 freely:
+          //startApp()
+        console.log(web3.eth.)
+        })
+</script>
