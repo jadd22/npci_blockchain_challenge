@@ -55,9 +55,10 @@
 # Add Bank into Blockchain
 
 function : addBank
-bank 1: `"0xb07A934763216E96922Ffa85268293EDcc2Bf0f5","Bank Of India"`
 
-bank 2: `"0x7Ad22966C9d649183bd1D42e172C2a26Ec4C3122","Kotak"`
+ bank 1: `"0xb07A934763216E96922Ffa85268293EDcc2Bf0f5","Bank Of India"`
+
+ bank 2: `"0x7Ad22966C9d649183bd1D42e172C2a26Ec4C3122","Kotak"`
 
 
 # Add User in Bank into Blockchain
